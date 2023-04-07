@@ -92,19 +92,22 @@
 
 .nav-icons .profile .profile-actions{
   position: absolute;
-  top: 98%;
+  top: 111%;
   left: 0;
   width: 150px;
   z-index: 10;
-  padding: 15px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: var(--card-bg-01);
-  line-height: 30x;
+  background: #0a1d37;
+  line-height: 38px;
   display: none;
+  font-weight: 700;
   cursor: pointer;
+  color: #e2e1e3;
 }
+
 
 
 

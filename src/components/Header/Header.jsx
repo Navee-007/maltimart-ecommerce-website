@@ -100,15 +100,14 @@ const Header = () => {
 
             <div className="nav-icons">
               <span className="fav-icon">
-                <i className="ri-heart-line" />
-                <span className="badge">1</span>
+                
               </span>
               <span className="cart-icon" onClick={NavigateToCart}>
                 <i className="ri-shopping-bag-line" />
                 <span className="badge">{totalQuantity}</span>
               </span>
               <div className="profile  ">
-                <motion.img whileTap={{ scale: 1.2 }} src={currentUser ? currentUser.photoUrl : userIcon} alt="" 
+                <motion.img whileTap={{ scale: 1.2 }} src={ userIcon} alt="" 
                 onClick={toggleProfileActions}
 
                 />
