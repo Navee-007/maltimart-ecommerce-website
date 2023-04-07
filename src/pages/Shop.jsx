@@ -84,13 +84,13 @@ const Shop = () => {
               </div>
             </Col>
             <Col lg="3" md="6" sm="6"  className="text-end">
-              <div className="filter-widget">
+              {/* <div className="filter-widget">
                 <select>
                   <option>Sort By</option>
                   <option value="ascending">Ascending</option>
                   <option value="descending">Descending</option>
                 </select>
-              </div>
+              </div> */}
             </Col>
             <Col lg="6" md="12" sm="12">
               <div className="search-box">
