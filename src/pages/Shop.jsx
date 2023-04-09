@@ -64,6 +64,29 @@ const Shop = () => {
     setProductsData(searchedProducts);
   };
 
+  const handleShort = (e) => {
+     const shortValue = e.target.value;
+     if (shortValue === "ascending") {
+       
+     const shortProducts = products.filter((item) =>
+     item.sort()
+
+   );
+
+   setProductsData(shortProducts);
+     }
+
+     if (shortValue === "descending") {
+       
+      const shortProducts = products.filter((item) =>
+      item.sort().reverse()
+ 
+    );
+ 
+    setProductsData(shortProducts);
+      }
+  }
+
   return (
     <Helmet title="Shop">
       <CommonSection title="Products" />
@@ -84,13 +107,13 @@ const Shop = () => {
               </div>
             </Col>
             <Col lg="3" md="6" sm="6"  className="text-end">
-              {/* <div className="filter-widget">
-                <select>
-                  <option>Sort By</option>
-                  <option value="ascending">Ascending</option>
-                  <option value="descending">Descending</option>
-                </select>
-              </div> */}
+                <div className="filter-widget">
+                  <select>
+                    <option onChange={handleShort} >Sort By</option>
+                    <option value="ascending">ascending</option>
+                    <option value="descending">Descending</option>
+                  </select>
+                </div>
             </Col>
             <Col lg="6" md="12" sm="12">
               <div className="search-box">
